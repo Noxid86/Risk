@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+}
+
+/* GAME SELECTION STYLES */
+.page_wrapper {
+  width: 750px;
+  margin: auto;
+}
+
+.play_btn{
+  display: none;
+}
+.lobby_btn {
+  background-color: #655356;
+  color: white;
+  height: 30px;
+  width: 60px;
+  border: 1px solid white;
+}
+.new_game {
+  padding: 10px;
+  margin: 10px;
+  background-color: #E4DFDA;
+}
+.player_count {
+  line-height: 30px;
+  background-color: white;
+  margin: 0px;
+  float: left;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+.new_game_name{
+  float: left;
+  padding-left: 10px;
+  margin-right: 20px;
+  height: 30px;
+  border: 0px;
+}
+
+.player_decrement, .player_increment {
+  float: left;
+  width: 30px;
+}
+.btn_create {
+  margin-left: 20px;
+}
+.game {
+  padding: 10px;
+  margin: 10px;
+  background-color: #E4DFDA;
+}

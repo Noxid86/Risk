@@ -1,0 +1,32 @@
+<% include ./partials/header %>
+<link rel="stylesheet" href="/anatomyQuiz/anatomyStyles.css">
+<div id="splash"></div>
+<div id="view_panel">
+  <div id='button_bar'>
+    <div id='left_dock'><div id='menu'class='btn'></div></div>
+    <div id='banner'><h1 id='part1' class="part"></h1></h1></div>
+    <div id='right_dock'><div id='reset'class='btn'></div></div>
+  </div>
+  <svg id="view"></svg>
+  <div id='animal'class='dropdown'>
+    <div class='dropbtn'><h1>ANIMAL</h1></div>
+    <div class='dropdown-content'>
+      <h3>Otter</h3>
+      <h3>Iguana</h3>
+      <h3>Bear</h3>
+      <h3>Kitten</h3>
+    </div>
+  </div>
+  <div id='part'class='dropdown'>
+    <div class='dropbtn'><h1>PART</h1></div>
+    <div class='dropdown-content'>
+      <h3>Head</h3>
+      <h3>Torso</h3>
+      <h3>Limbs</h3>
+      <h3>????</h3>
+    </div>
+  </div>
+</div>
+<script src="snap.svg.js"></script>
+<script src='script.js'></script>
+<% include ./partials/footer %>

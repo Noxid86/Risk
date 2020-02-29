@@ -1,0 +1,39 @@
+<%- include ./partials/header.ejs %>
+<h3 class="message_bar"></h3>
+<link rel="stylesheet" href="/risk/playRisk.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+<script>
+  var currUser = {
+    _id: '<%= user._id %>',
+    username: '<%= user.username %>',
+  }
+</script>
+<div class="display_wrapper">
+  <div class="gui_actions">
+    <button class="btn btn_add">ADD</button>
+    <button class="btn btn_remove">REMOVE</button>
+    <button class="btn btn_move">MOVE</button>
+    <button class="btn btn_attack">ATTACK</button>
+    <button class="btn btn_end_turn">END TURN</button>
+  </div>
+  <div id="board_wrapper">
+    <svg id='game_board'>
+
+    </svg>
+  </div>
+  <div class="gui_players">
+
+  </div>
+  <div class="risk-chat">
+    <div class="chat-window">
+      <div id="output">
+      </div>
+      <p id="handle"></p>
+      <input type="text" placeholder="message..." id="message">
+      <button type="button" id="send">SEND</button>
+    </div>
+  </div>
+</div>
+<script src="snap.js"></script>
+<script src='scripts/riskScript.js'></script>
+<%- include ./partials/footer.ejs %>

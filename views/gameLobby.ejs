@@ -1,0 +1,30 @@
+<%- include ./partials/header.ejs %>
+<link rel="stylesheet" href="/risk/gameLobby.css">
+<div class="page_wrapper">
+<div class="new_game">
+  <h1>Create A New Game...</h1>
+  <input class='new_game_name' placeholder="game name"></input>
+  <button class="lobby_btn player_decrement">-</button>
+  <p class="player_count">2</p>
+  <button class="lobby_btn player_increment">+</button>
+  <button class='lobby_btn btn_create'>Create</button>
+</div>
+<div class="current_games">
+
+</div>
+<div class="open_games">
+  <% for(var i=0; i < RiskData.length; i++) {%>
+  <div class="game" data-gameId=<%=RiskData[i]._id%>>
+    <div class="title_bar">
+      <h3 class="game_name"><%=RiskData[i].game_name%></h3>
+      <button class="lobby_btn btn_delete">Delete</button>
+      <button class="lobby_btn btn_join">Join</button>
+      <a class="play_btn" href="/risk"></a>
+    </div>
+  </div>
+  <% } %>
+</div>
+</div>
+
+<%- include ./partials/footer.ejs %>
+<script src='risk/gameLobby.js'></script>

@@ -1,0 +1,20 @@
+*{
+  box-sizing: border-box;
+}
+
+.login-title {
+  font-size: 20px;
+  margin: auto;
+  width: 150px;
+}
+
+.projects{
+  max-width: 750px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.link_container {
+  background-color: #655356;
+}

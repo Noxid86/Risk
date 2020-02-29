@@ -1,0 +1,153 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#board_wrapper {
+
+}
+
+#game_board {
+  margin-left: 50px;
+  margin-bottom: 50px;
+  max-height: 90vh;
+  text-align: center;
+}
+
+.gui_actions {
+  padding: 0px;
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  width: 100px;
+}
+
+.gui_players {
+  padding: 0px;
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  width: 300px;
+}
+
+.player {
+  width: 300px;
+  height: 65px;
+  border: 3px solid #E4DFDA;
+  margin: 5px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.player>img{
+  margin: 5px;
+  height: 50px;
+  float: left;
+  border-radius: 5px;
+}
+
+.player>h1{
+  float: left;
+  text-align: center;
+  margin: 5px;
+  height: 50px;
+  max-width: 200px;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.player>.troops{
+  float: right;
+  font-size: 20px;
+  float: right;
+  width: 50px;
+  border-radius: 5px;
+}
+.logged{
+  box-shadow: -10px 0px #e0f7dd;
+}
+
+/* GAME MENU */
+.message_bar{
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info_display {
+  position: absolute;
+  margin: auto;
+  padding-top: 10px;
+  width: 160px;
+  height: 70px;
+  background-color: rgb(255, 223, 238);
+}
+
+.info_display>*{
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.btn{
+  display: block;
+  width: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.risk-chat{
+  width: 50vw;
+  height: 150px;
+  border: 3px solid gray;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: -150px;
+  background-color: rgb(213, 224, 241);
+  padding: 10px;
+}
+
+.grayscale {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.chat-window>#output{
+  margin-bottom: 5px;
+  height: 100px;
+  background-color: white;
+  overflow-y: auto;
+}
+.chat-window>#handle{
+  float: left;
+  margin: 0px;
+  width: 100px;
+  overflow: hidden;
+}
+
+.chat-window>#message{
+  width: calc(100% - 180px);
+}
+
+.chat-window>#send{
+  margin: 0px;
+  width: 70px;
+}
+
+#output>p{
+  margin: 0px;
+}
+
+svg {
+  overflow: hidden;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}

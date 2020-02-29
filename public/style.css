@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*
+Gray: #2f3c7d
+Light Gray: #E4DFDA
+Orange: rgb(233, 193, 72);
+*/
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+
+h1, h2, h3, h4, p, li {
+  font-family: 'Anton', sans-serif;
+  font-weight: initial;
+  color: #655356;
+  list-style: none;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(89, 85, 85);
+  font-size: 18px;
+}
+
+div {
+  border-color: rgb(255, 178, 88);
+}
+
+nav {
+  float: right;
+}
+
+ul {
+  list-style: none;
+}
+
+.header_title {
+  font-family: 'Anton', sans-serif;
+  font-weight: initial;
+  margin: 0px;
+  margin-left: 50px;
+  line-height: 90px;
+  font-size: 50px;
+  width: 400px;
+  float: left;
+  text-shadow:
+  -3px -3px 0 #ffffff,
+  3px -3px 0 #ffffff,
+  -3px 3px 0 #ffffff,
+  3px 3px 0 #ffffff;
+}
+
+.resumeBody {
+  max-width: 750px;
+}
+
+.header {
+  background-color:#655356;
+  height: 85px;
+  padding: 0px;
+}
+.logo{
+  background-color: #655356;
+  border: 3px solid white;
+  border-radius: 50px;
+  margin-top: 17px;
+  margin-left: 40px;
+  width: 50px;
+  float: left;
+  height: 50px;
+}
+
+.logo:hover{
+  background-color: rgb(233, 159, 72);
+}
+
+.name {
+  line-height: 70px;
+  margin-top: -7px;
+  margin: 0px;
+  height: 100%;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-family: 'Baloo Tammudu', cursive;
+}
+
+.name>a{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar {
+  margin-right: 30px;
+}
+.navbar>li {
+  border-radius: 5px;
+  border: 3px solid white;
+  display: inline;
+  background-color: #655356;
+  height: 50px;
+  width: 100px;
+  float: right;
+  margin-right: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.navbar>li:hover {
+  background-color: rgb(233, 159, 72);
+}
+
+a{
+  line-height: 45px;
+  text-align: center;
+  color: white;
+  display: block;
+  width: 100%;
+  margin: auto;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.site-title {
+  font-size: 26px;
+  float: left;
+}
+
+.footer {
+  margin-top: 50px;
+  height: 35px;
+  color: white;
+  background-color:#655356;
+  overflow: hidden;
+}
+
+.copyright {
+  color: white;
+  float: right;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.stickyfooterwrapper {
+  min-height: 100vh;
+  margin-bottom: -35px;
+}
